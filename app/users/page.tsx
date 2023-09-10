@@ -1,15 +1,12 @@
-import UserTable from "./UserTable"
+import UserTable from './UserTable'
 
-const UsersPage = async () =>
-{
-  
-  return ( 
-  <>
+
+const UsersPage = async () => {
+  return (
+    <>
       <h1>Users</h1>
-     <UserTable />
-     
+      <UserTable />
     </>
   )
-
 }
 export default UsersPage

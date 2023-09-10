@@ -6,11 +6,7 @@
   --foreground-rgb: 0, 0, 0;
 }
 
-@media () {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
-}
+
 
 body {
   color: rgb(var(--foreground-rgb));

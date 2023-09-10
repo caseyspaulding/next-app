@@ -1,13 +1,20 @@
-interface User {
+import { sort } from 'fast-sort';
+
+interface User
+{
     id: number;
     name: string;
     email: string;
-  }
+}
+
 
 const UserTable = async () =>
 {
   const response = await fetch('https://jsonplaceholder.typicode.com/users', { cache: 'no-store' });
   const users: User[] = await response.json();
+
+  const sorted = sort(users).desc(u => u.Fi)
+  
   return (
     <div>
       <table className='table table-bordered'>
