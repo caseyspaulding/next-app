@@ -1,19 +1,13 @@
-const UsersPage = async() =>
-{
-  interface User {
-    id: number;
-    name: string;
-  }
-  
-  const response = await fetch('https://jsonplaceholder.typicode.com/users');
-  const users: User[] = await response.json();
+import UserTable from "./UserTable"
 
-  return (
+const UsersPage = async () =>
+{
+  
+  return ( 
   <>
-    <h1>Users</h1>
-    <ul>
-      { users.map(user => <li key={ user.id }> {user.name} )}
-    </ul>
+      <h1>Users</h1>
+     <UserTable />
+     
     </>
   )
 
