@@ -1,7 +1,9 @@
+import AddToCart from "./AddToCart"
+
 const ProductCard = () => {
   return (
     <div>
-      ProductCard
+      <AddToCart />
     </div>
   )
 }
